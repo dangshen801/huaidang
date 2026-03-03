@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN"> 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>最喜欢胡金</title>
   <style>
     .video-player {
-      width: 500px;
-      height: 450px;
+      width: 100%;
+      max-width: 500px; 
+      height: auto; 
+      margin: 20px 0; 
+    }
+    .text-content {
+      line-height: 2; 
+      font-size: 16px;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <p>最喜欢胡金</p>
   <div class="video-player">
-    <video controls autoplay muted>
+    <video controls autoplay muted preload="auto" poster="hu/cover.jpg">
       <source src="hu/hujin.mp4" type="video/mp4">
     </video>
   </div>
-  <br>
-  永远爱胡金
-  <br>
-  你要像鸟一样自由
-  <br>
-  但也奖励你 走到哪 都不会忘记我啊
-  <br>
-  记得时刻想起我
+  <div class="text-content">
+    永远爱胡金<br>
+    你要像鸟一样自由<br>
+    但也奖励你 走到哪 都不会忘记我啊<br>
+    记得时刻想起我
+  </div>
 </body>
 </html>
